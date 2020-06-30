@@ -1,0 +1,65 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* 
+MAIN HEADER
+*/
+.main_header{
+    background: #000;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+.main_header_nav{
+    padding: 10px;
+}
+.main_header_nav{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    font-size: 1.2em;
+}
+.main_header_nav_ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1300px;
+    justify-content: center;
+    align-items: center;
+}
+.main_header_nav ul li{
+    flex-basis: 12%;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.main_header_nav ul li:hover,
+.main_header_nav ul li:hover a{
+    color: #000;
+    background: #fff;
+}
+.main_header_nav ul li a{
+    color: #fff;
+}
+/* 
+IMAGE
+*/
+.main_img{
+    background-image: url(_img/moon.jpg);
+    max-width: 1920px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 22% 10%;
+    width: 100%;
+    box-sizing: border-box;
+    transform-style: inherit;
+    z-index: 1;
+}
