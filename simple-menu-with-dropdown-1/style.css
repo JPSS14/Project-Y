@@ -9,8 +9,10 @@
 /* 
 MAIN HEADER
 */
-h1{
+.logo{
     color: #fff;
+    flex-basis: 10%;
+    text-align: center;
 }
 .header{
     background: #000;
@@ -18,10 +20,12 @@ h1{
     flex-wrap: wrap;
     max-width: 100%;
     padding: 0;
+    align-items: center;
 }
 .container{
     margin: 0 auto;
     width: 1200px;
+    flex-basis: 90%;
 }
 .header_nav{
   padding: 10px;
@@ -30,20 +34,24 @@ h1{
     display: flex;
     flex-wrap: wrap;
     max-width: 1300px;
-    font-size: 1em;
+    font-size: 1.05em;
     justify-content: center;
     align-items: center;
 }
-
 .header_nav_menu_item{
     flex-basis: 12%;
     text-align: center;
     position: relative;
-    padding: 10px 20px;
     cursor: pointer;
+    margin: 0 20px 0px 20px;
 }
 .header_nav_menu_item a{
     color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
 }
 .header_nav_menu_item:hover,
 .header_nav_menu_item:hover a{
@@ -58,34 +66,48 @@ DROPDOWN
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 10px;
+    left: 0;
+    top: 100%;
 }
 .header_nav_menu_item_dropdown_itens{
     display: none;
     position: relative;
 }
-.header_nav_menu_item_dropdown_itens a{
-    padding: 5px;
+.header_nav_menu_item_dropdown_itens a{  
+    padding: 10px;
+}
+.header_nav_menu_item_dropdown_itens:hover a{
+    background: #000;
+    color: #fff;
 }
 .header_nav_menu_item:hover .header_nav_menu_item_dropdown_itens{
     display: block;
-    top: 0;
     z-index: 2;
     width: 100%;
     text-align: center;
 }
+.header_nav_menu_item_dropdown li:last-child a{
+    border-radius: 0px 0px 10px 10px;
+}
 /* 
-IMAGE
+IMAGE BACKGROUND
 */
 .main_img{
     background-image: url(_img/moon.jpg);
     max-width: 1920px;
     background-size: cover;
-    background-attachment: fixed;
     position: relative;
     padding: 22% 10%;
     width: 100%;
     box-sizing: border-box;
     transform-style: inherit;
     z-index: 1;
+}
+/* 
+MAIN CONTENT
+*/
+.content p{
+    margin: 40px;
+    font-size: 2em;
+    text-align: center;
 }
